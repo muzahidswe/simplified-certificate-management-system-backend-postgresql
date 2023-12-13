@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1702426715722" clover="3.2.0">
+  <project timestamp="1702426715722" name="All files">
+    <metrics statements="123" coveredstatements="100" conditionals="31" coveredconditionals="20" methods="16" coveredmethods="15" elements="170" coveredelements="135" complexity="0" loc="123" ncloc="123" packages="6" files="8" classes="8"/>
+    <package name="backend">
+      <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/index.js">
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.config">
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="knexfile.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/config/knexfile.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="sqliteConfig.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/config/sqliteConfig.js">
+        <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.controllers">
+      <metrics statements="37" coveredstatements="28" conditionals="15" coveredconditionals="12" methods="5" coveredmethods="5"/>
+      <file name="certificatesController.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/controllers/certificatesController.js">
+        <metrics statements="34" coveredstatements="25" conditionals="14" coveredconditionals="11" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="7" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+      </file>
+      <file name="helperController.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/controllers/helperController.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.log">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="log.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/log/log.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.models">
+      <metrics statements="44" coveredstatements="31" conditionals="10" coveredconditionals="5" methods="9" coveredmethods="8"/>
+      <file name="certificatesModel.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/models/certificatesModel.js">
+        <metrics statements="44" coveredstatements="31" conditionals="10" coveredconditionals="5" methods="9" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="53" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="68" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="72" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="backend.routes">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="certificates.js" path="/Users/smmuzahidulislam/muzahid_mac/programming/assignment/backend/routes/certificates.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

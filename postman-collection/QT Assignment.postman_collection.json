@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "39dfc234-ae42-47c9-837b-545c5ce8760d",
+		"name": "QT Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Certificate List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/certificates/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"certificates",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Certificate Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/certificates/details/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"certificates",
+						"details",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Certificate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"SQA\",\n    \"category\": \"Testing\",\n    \"issuer\": \"Admin\",\n    \"issued_to\": \"MH Nayeem\",\n    \"issued_on\": \"2023-12-12\",\n    \"expiration_date\": \"2023-12-31\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/certificates/add-new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"certificates",
+						"add-new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Certificate",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8989/certificates/delete/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"certificates",
+						"delete",
+						"15"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

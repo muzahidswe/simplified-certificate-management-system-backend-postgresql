@@ -1,0 +1,137 @@
+swagger: '2.0'
+info:
+  title: Certificate Management System API
+  description: A simple API for creating, listing, and deleting certificates
+  version: 1.0.0
+  contact:
+    email: muzahiduef@outlook.com
+schemes:
+  - http
+paths:
+  /certificates/add-new:
+    post:
+      summary: Create a new certificate
+      description: Creates a new certificate with the specified name, category, issuer, issued to, issued on, and expiration date
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: certificateData
+          description: Certificate data
+          required: true
+          schema:
+            $ref: "#/definitions/createCertificate"
+          produces:
+            - application/json
+      responses:
+        '200':
+          description: New Certificate Created Successfully
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              data:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  category:
+                    type: string
+                  issuer:
+                    type: string
+                  issued_to:
+                    type: string
+                  issued_on:
+                    type: string
+                  expiration_date:
+                    type: string
+        '500':
+          description: Error creating certificate
+
+  /certificates/list:
+    get:
+      summary: Get List of Certificate
+      description: API to get List of Certificate
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: LIst of notifications
+          schema:
+            $ref: "#/definitions/certificateList"
+        "400":
+          description: Invalid Fields
+        '500':
+          description: Internal Server Error 
+
+  /certificates/delete/{id}:
+    delete:
+      summary: Delete a certificate
+      description: Deletes the certificate with the specified ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            $ref: '#/definitions/deleteCertificate'
+      responses:
+        '200':
+          description: Certificate Deleted Successfully
+        '500':
+          description: Error deleting certificate
+definitions:
+  createCertificate:
+    properties:
+      name:
+        type: string
+        description: Example "Full Stack Development"
+        default: 'Full Stack Development'
+      category:
+        type: string
+        description: Example "Development"
+        default: 'Development'
+      issuer:
+        type: string
+        description: Example "Admin"
+        default: 'Admin'
+      issued_to:
+        type: string
+        description: Example "S M Muzahidul Islam"
+        default: 'S M Muzahidul Islam'
+      issued_on:
+        type: string
+        description: Example "2012-12-01"
+        format: date
+        default: '2012-12-01'
+      expiration_date:
+        type: string
+        description: Example "2012-12-31"
+        format: date
+        default: '2012-12-31'
+  certificateList:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+      category:
+        type: string
+      issuer:
+        type: string
+      issued_to:
+        type: string
+      issued_on:
+        type: string
+        format: date
+      expiration_date:
+        type: string
+        format: date
+  deleteCertificate:
+    properties:
+      id:
+        type: number
+        description: certificate id
