@@ -1,7 +1,24 @@
+// this is for PostgreSQL connection
 module.exports = {
-    client: 'sqlite3',
+  development: {
+    client: 'pg',
     connection: {
-      filename: './database/certificate_management.db',
+      host: 'localhost',
+      user: 'root',
+      password: '',
+      database: 'certificate_db',
+      port: 5432, // Default PostgreSQL port
     },
-   useNullAsDefault: true,
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    // migrations: {
+    //   tableName: 'knex_migrations',
+    //   directory: './migrations',
+    // },
+    // seeds: {
+    //   directory: './seeds',
+    // },
+  },
 };

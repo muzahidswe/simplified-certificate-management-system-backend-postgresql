@@ -1,14 +1,18 @@
-const sqlite3 = require('sqlite3').verbose();
+// const { Pool } = require('pg'); // this is for PostgreSQL connection
 const knex = require('knex');
 const config = require('./knexfile');
-const db = knex(config);
 
-new sqlite3.Database(config.connection.filename, (err) => {
-  if (err) {
-    console.error('Error opening database:', err.message);
-  } else {
-    console.log('Connected to the SQLite database named `certificate_management`');
-  }
+// this is for PostgreSQL connection
+const db = knex(config.development);  // this is for PostgreSQL connection
+db.raw('SELECT 1')
+  .then(() => {
+    console.log('Connected to the PostgreSQL database');
+  })
+  .catch(error => {
+    console.error('Error checking database connection:', error);
+  })
+  .finally(() => {
+    // db.destroy();
 });
 
 module.exports = db;

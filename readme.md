@@ -45,7 +45,7 @@ This backend is developed using Node.js with Express Framework
 
 ### Clone the Repository:
 ```
-git clone `https://github.com/muzahidswe/simplified-certificate-management-system-backend.git`
+git clone `https://github.com/muzahidswe/simplified-certificate-management-system-backend-postgresql.git`
 ```
 
 ### Navigate to the Backend Directory:
